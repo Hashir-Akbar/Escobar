@@ -15,7 +15,8 @@
 }
 body {
   background-image: linear-gradient(180deg, #451f58 10%, #8c3692 100%);
-  height: 100vh;
+
+  height: 100dvh;
   font-family: "Congenial Bold", sans-serif;
 
   line-height: 1.5;
@@ -49,7 +50,7 @@ header.container {
   margin-inline: auto;
 }
 .main .para-1 {
-  font-size: 20px;
+  font-size: 18px;
 
   margin-top: 30px;
   color: white;
@@ -71,7 +72,7 @@ header.container {
   position: absolute;
   top: 0;
   left: 70px;
-  width: 100%;
+  width: 80%;
   height: 400px;
   background-repeat: no-repeat;
   background-image: url("../media/moon.png");
@@ -86,4 +87,10 @@ header.container {
   font-size: 28px;
   color: white;
   text-align: center;
+}
+
+@media (max-width: 433px) {
+  .moon_timer::before {
+    left: 50px;
+  }
 }
